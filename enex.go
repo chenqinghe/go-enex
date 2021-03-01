@@ -1,4 +1,4 @@
-// The parser for [the xml that exported by Evernote (.enex file)](https://help.evernote.com/hc/en-us/articles/209005557).
+// The parser for [the xml that exported by Evernote (.enex file)](https://evernote.com/blog/how-evernotes-xml-export-format-works/).
 package enex
 
 import (
@@ -12,6 +12,10 @@ import (
 
 type EncodedData struct {
 	data []byte
+}
+
+func (ed *EncodedData) Bytes() []byte {
+	return ed.data
 }
 
 func (ed *EncodedData) String() string {

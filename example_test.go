@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/macrat/go-enex"
+	"github.com/chenqinghe/go-enex"
 )
 
 func Example() {
